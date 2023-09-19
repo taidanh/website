@@ -1,6 +1,8 @@
 <template>
   <div>
-    <section class="hero bg-primary text-white text-center py-3 d-flex align-items-center justify-content-center">
+    <section
+      class="hero bg-primary text-white text-center py-3 d-flex align-items-center justify-content-center"
+    >
       <div class="image-container">
         <img src="@/assets/me.jpg" alt="Tai Danh" class="hero-image" />
       </div>
@@ -55,7 +57,8 @@
   justify-content: center;
 }
 
-.image-container, .content-container {
+.image-container,
+.content-container {
   flex: 0 0 40vw;
   max-width: 40vw;
 }
