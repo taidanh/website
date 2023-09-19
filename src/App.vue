@@ -23,6 +23,6 @@ export default defineComponent({
 
 <style scoped>
 .router-container {
-  padding: 20px; /* Adjust padding value as desired */
+  padding: 20px 40px; /* 20px vertical and 40px horizontal padding */
 }
 </style>

@@ -1,56 +1,78 @@
 <template>
-  <div class="contact">
+  <div>
     <h1>Get In Touch</h1>
     <p>
       I'm always open to discussing software projects, collaborations, or just general tech talk.
       Feel free to reach out through any of the platforms below:
     </p>
 
-    <ul class="contact-list">
-      <li>
-        <i class="bi bi-envelope-fill"></i>
-        <a href="mailto:taid100@gmail.com">taid100@gmail.com</a>
-      </li>
-      <li>
-        <i class="bi bi-github"></i>
-        <a href="https://github.com/taidanh" target="_blank" rel="noopener noreferrer"
-          >Github: taidanh</a
+    <div class="contact-buttons">
+      <div class="mb-3">
+        <a href="mailto:taid100@gmail.com" class="btn btn-light">
+          <b-icon-envelope-fill class="mr-2"></b-icon-envelope-fill>
+          taid100@gmail.com
+        </a>
+      </div>
+
+      <div class="mb-3">
+        <a
+          href="https://github.com/taidanh"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-github"
         >
-      </li>
-      <li>
-        <i class="bi bi-linkedin"></i>
-        <a href="https://linkedin.com/in/taidanh" target="_blank" rel="noopener noreferrer"
-          >LinkedIn: Tai Danh</a
+          <b-icon-github class="mr-2"></b-icon-github>
+          taidanh
+        </a>
+      </div>
+
+      <div class="mb-3">
+        <a
+          href="https://linkedin.com/in/taidanh"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-linkedin"
         >
-      </li>
-      <!-- Add other links as desired, e.g., Twitter, personal blog, etc. -->
-    </ul>
+          <b-icon-linkedin class="mr-2"></b-icon-linkedin>
+          Tai Danh
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.contact-list {
-  list-style-type: none;
-  padding-left: 0;
+.contact {
+  padding: 20px;
 }
 
-.contact-list li {
-  margin: 10px 0;
-  font-size: 18px;
+.btn-light {
+  color: #333;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
 }
 
-.contact-list i {
-  margin-right: 10px;
-  color: #007bff; /* This is the default bootstrap primary color. Adjust as needed. */
+.btn-light:hover {
+  color: #fff;
+  background-color: #007bff;
 }
 
-.contact-list a {
-  color: #333; /* Adjust color as needed */
-  text-decoration: none;
-  transition: color 0.3s ease;
+.btn-github {
+  background-color: #24292e; /* GitHub's color */
+  color: #fff;
 }
 
-.contact-list a:hover {
-  color: #007bff; /* Adjust hover color as needed */
+.btn-github:hover {
+  background-color: #191c20; /* Darken on hover */
+}
+
+.btn-linkedin {
+  background-color: #0077b5; /* LinkedIn's color */
+  color: #fff;
+}
+
+.btn-linkedin:hover {
+  background-color: #005a87; /* Darken on hover */
 }
 </style>
