@@ -4,7 +4,7 @@
       class="hero bg-primary text-white text-center py-3 d-flex align-items-center justify-content-center"
     >
       <div class="image-container">
-        <img src="@/assets/me.jpg" alt="Tai Danh" class="hero-image" />
+        <img src="@/assets/me.jpg" alt="Tai Danh in graduation gown with diploma" class="hero-image" />
       </div>
       <div class="content-container">
         <h1>Tai Danh</h1>

@@ -1,6 +1,6 @@
 <template>
-  <b-navbar toggleable="lg" type="light" variant="light">
-    <b-navbar-brand href="/" class="custom-padding">Tai Danh</b-navbar-brand>
+  <b-navbar toggleable="lg" type="light" variant="light" class="custom-padding">
+    <b-navbar-brand href="/" class="custom-brand">{{ getBrandName }}</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -15,8 +15,23 @@
   </b-navbar>
 </template>
 
+<script lang="ts">
+export default {
+  computed: {
+    getBrandName() {
+      return this.$route.path === '/' ? '~' : 'Tai Danh';
+    },
+  }
+}
+</script>
+
 <style scoped>
 .custom-padding {
-  padding-left: 20px !important;
+  padding: 0 20px;
+}
+
+.custom-brand {
+  font-weight: bold;
+  font-size: xx-large;
 }
 </style>
