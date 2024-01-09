@@ -1,9 +1,9 @@
 <template>
   <div>
     <section
-      class="hero bg-primary text-white text-center py-3 d-flex align-items-center justify-content-center"
+      class="hero text-black text-center py-3 d-flex align-items-center justify-content-center"
     >
-      <div class="image-container">
+      <div class="image-container hero-image-container">
         <img src="@/assets/me.jpg" alt="Tai Danh in graduation gown with diploma" class="hero-image" />
       </div>
       <div class="content-container">
@@ -87,5 +87,33 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container,
+  .content-container {
+    flex: 0 0 auto; /* Do not grow, do not shrink, be automatically sized */
+    max-width: none; /* Override any max-width */
+    width: 100%;
+  }
+
+  .image-container {
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .content-container {
+    padding: 1rem;
+  }
 }
 </style>
