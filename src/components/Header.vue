@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="light" variant="light" class="custom-padding">
+  <b-navbar toggleable="lg" class="custom-padding" :class="{'bg-dark': isDark, 'bg-light': !isDark}">
     <b-navbar-brand href="/" class="custom-brand">{{ getBrandName }}</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -21,6 +21,9 @@ export default {
     getBrandName() {
       return this.$route.path === '/' ? '~' : 'Tai Danh';
     },
+    isDark() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
   }
 }
 </script>
@@ -33,5 +36,12 @@ export default {
 .custom-brand {
   font-weight: bold;
   font-size: xx-large;
+  color: var(--color-text); /* Using the CSS variable for text color */
+}
+
+/* Ensuring text colors in navbar adapt to theme changes */
+.nav-link {
+  color: var(--color-text);
 }
 </style>
+
