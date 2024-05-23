@@ -5,7 +5,7 @@
       <p>
         For a detailed look at my professional experiences and achievements, please view my resume.
       </p>
-      <a href="https://github.com/taidanh/website/blob/170d5e9fe603b2d60e3ba3d5746ff38b9d892034/public/resume-tai-danh.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-light"
+      <a href="https://github.com/taidanh/website/blob/main/public/resume-tai-danh.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-light"
         >View Resume</a
       >
     </section>
