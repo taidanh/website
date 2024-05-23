@@ -2,10 +2,11 @@
   <div class="about">
     <h1>About Me</h1>
     <p>
-      Hello! I'm Tai Danh, a Computer Science graduate from the University of California Santa Cruz.
-      In my current role, I've had the privilege to lead projects, work directly with clients, and
-      contribute to meaningful technological advances. My professional journey has been an exciting
-      mix of education, innovation, and hands-on experience.
+      Hello, World! I'm Tai Danh, a Computer Science graduate from the University of California Santa Cruz.
+      In my current role, as an IT Consultant, I've had the privilege to coordinate client work amongst my
+      team, practice professional time management skills, as well as gain expertise in creating reliable,
+      reusable, and relevant documentation. My professional journey has been an exciting mix of education,
+      innovation, and hands-on experience.
     </p>
 
     <p>
